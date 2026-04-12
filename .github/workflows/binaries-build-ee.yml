@@ -1,9 +1,10 @@
 name: EE build and push - OpenShift Binaries
 
 on:
-  pull_request:
-    paths:
-      - 'execution-environments/binaries/**'
+  # Disable pull_request to prevent malicious PRs
+#   pull_request:
+#     paths:
+#       - 'execution-environments/binaries/**'
   push:
     branches:
       - main
