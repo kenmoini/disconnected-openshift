@@ -1,9 +1,10 @@
 name: EE build and push - Auto Mirror Image
 
 on:
-  pull_request:
-    paths:
-      - 'execution-environments/auto-mirror-image/**'
+  # Disable pull_request to prevent malicious PRs
+  # pull_request:
+  #   paths:
+  #     - 'execution-environments/auto-mirror-image/**'
   push:
     branches:
       - main
